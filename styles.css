@@ -1,0 +1,30 @@
+:root {
+    --width: 100vh;
+    --full-width: 100vh;
+
+    --angle: -11deg;
+    --pad-const: 0.09179;
+    --pad-val: calc(var(--full-width) * var(--pad-const));
+
+    @media
+
+}
+
+body {
+    background-color: #0A0908;
+}
+
+.header-margin {
+    position: relative;
+    background-color: #0A0908;
+    transform: skewY(var(--angle));
+    padding: var(--pad-val);
+
+}
+
+.container {
+    position: relative;
+    background-color: #22333B;
+    transform: skewY(var(--angle));
+    padding: var(--pad-val);
+}
