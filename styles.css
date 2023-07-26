@@ -24,7 +24,7 @@ body {
 
 .container {
     position: relative;
-    background-color: #22333B;
+    background-image: url(images/ashkan-forouzani-6KUT8j_xBq8-unsplash.jpg);
     transform: skewY(var(--angle));
     padding: var(--pad-val);
 }
