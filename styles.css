@@ -2,29 +2,59 @@
     --width: 100vh;
     --full-width: 100vh;
 
-    --angle: -11deg;
+    --angle: -10deg;
     --pad-const: 0.09179;
-    --pad-val: calc(var(--full-width) * var(--pad-const));
-
-    @media
+    --pad-val: calc(var(--width) * var(--pad-const));
 
 }
 
+@font-face {
+    font-family: "ToscaZero";
+    src: url(ToscaZero-gyA4.otf) format("opentype");
+}
+
 body {
-    background-color: #0A0908;
+    background-image: url(images/vecteezy_black-and-yellow-abstract-background-with-grunge-texture_6415048.jpg);
+    background-size: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    font-family: "ToscaZero",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f7a000;
+
+    gap: 10px;
+    margin: 0;
 }
 
 .header-margin {
     position: relative;
     background-color: #0A0908;
     transform: skewY(var(--angle));
-    padding: var(--pad-val);
+    padding: var(--pad-val) 0;
+
+    text-align: center;
+    outline: 1px solid transparent;
+    border: 1px solid #0A0908;
+    font-size: 2.5rem;
 
 }
 
-.container {
-    position: relative;
-    background-image: url(images/ashkan-forouzani-6KUT8j_xBq8-unsplash.jpg);
-    transform: skewY(var(--angle));
-    padding: var(--pad-val);
+fieldset {
+    text-align: center;
+    border: 2px solid #0A0908;
+}
+
+input {
+    border-radius: 10px;
+}
+
+input:valid:focus {
+    border: 1px solid #f7a000;
+}
+
+button {
+    padding: 15px 40px;
+    border: 2px solid #f7a000;
+    border-radius: 10px;
 }
